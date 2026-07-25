@@ -44,9 +44,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** SQL, Python (Pandas, NumPy), JavaScript/Google Apps Script automation, PMO/program management, SOX/ITGC/ITAC/ITDM controls testing, Looker/Tableau/Power BI reporting, advanced Excel modeling
+**Moderate match areas:** Broader data-analyst work not centered on controls/PMO (strong SQL/Python foundation, but title history has been Manager/Senior Associate, not "Data Analyst")
+**Weak match areas:** Software/ML engineering roles requiring formal CS or ML modeling background
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -58,9 +58,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Consulting/professional-services PMO delivery, Fortune 10 client program management, SOX and internal-controls testing, data pipeline/reporting automation
+**Moderate:** Data Analyst roles (strong technical toolkit, but would need to reframe from a PMO/Manager title to an analyst-focused one)
+**Entry-level:** N/A - 4+ years post-military professional experience plus prior USMC technical roles
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -75,10 +75,11 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- Within commute range (Charlotte, NC): PASS
+- Remote or hybrid: PASS (remote preferred)
+- Requires relocation: PASS (open to relocating)
+- Constant/frequent travel required: FAIL (deal-breaker)
+- Occasional/light travel: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -91,19 +92,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Move into (or continue as) a Manager-level or Data Analyst-titled role
+- Reduce ambiguity - clearly scoped work over open-ended mandates
+- Secure remote-friendly work with strong work/life balance
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: New, innovative, or exciting work; automation/data work with visible impact; clearly scoped problems
+- Tasks that drain: Meaningless tasks that produce no real results; high-ambiguity work; constant/frequent travel
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently employed (Manager at PwC); target salary baseline is $150k
+- **Flexibility**: Pursuing an Executive MBA (expected 2028) alongside work - values remote/flexible arrangements that support this
+- **Professional development**: Currently building an MBA credential; open to roles that broaden data/analytics scope
 
 ### 6. Salary Benchmark (Optional)
 

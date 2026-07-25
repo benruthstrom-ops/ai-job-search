@@ -4,51 +4,54 @@ framework_version: 1.0.0
 
 # Behavioral Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
+<!-- No formal assessment (PI/DISC/Myers-Briggs) on file. Built from Benjamin's self-assessment during /setup - treat as directional, not a scored instrument. -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
+Benjamin's self-assessed pattern is a **collaborative operator with decisive follow-through**: someone who works best embedded in a team, will step up to lead without being pushed into it, and prefers to make calls quickly while still verifying the answer is correct before committing.
 
 ## Core Behavioral Drives
 
 | Drive | Level | Meaning |
 |-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+| Collaboration | High | Prefers working closely with a team over solo/siloed work |
+| Leadership readiness | Moderate-High | Comfortable leading when the situation calls for it |
+| Decision speed | High | Makes decisions quickly / on the spot |
+| Decision rigor | High | Prioritizes getting the answer right over speed alone; verifies before committing |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Fast, confident decision-making** that doesn't sacrifice accuracy - verifies before committing rather than guessing
+- **Collaborative teammate who can lead** - works well embedded in a team but steps up to direct when needed (e.g., PMO delivery lead, technical training lead in the Marine Corps)
+- **Translator between technical and non-technical audiences** - e.g., converting a 1,500+ line SQL query into plain-language documentation for stakeholders
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- In a genuinely collaborative team, not isolated/siloed work
+- With clearly scoped work and low ambiguity, rather than vague or shifting mandates
+- With autonomy to make calls quickly rather than long approval chains
+- Remote or flexible arrangements that support work/life balance
+- On new, innovative, or exciting problems rather than repetitive maintenance/busywork
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **No formal behavioral assessment yet:** Frame as self-aware and reflective rather than claiming a specific "type" - avoid overstating precision in interviews or cover letters until a formal assessment is done.
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- "collaborative team", "cross-functional", "autonomy", "ownership"
+- "remote-friendly", "flexible work arrangements", "work-life balance"
+- "innovative", "greenfield", "new initiative", "fast-paced" (paired with clear scope)
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- "extensive/frequent travel required" - this is a stated deal-breaker, treat as FLAG/near-FAIL on Location & Logistics
+- "highly ambiguous", "figure it out as you go", "undefined scope"
+- Purely maintenance/BAU roles with little new/innovative work
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- Works well under management that delegates and trusts fast, autonomous decision-making
+- Prefers clear expectations and scope going in (low ambiguity), with freedom in how to execute
+- Doesn't work well under heavy travel requirements or open-ended, constantly shifting mandates
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** Reference decisiveness backed by verification (accuracy over guesswork), and the collaborative-but-can-lead balance
+- **CV:** Emphasize leadership bullets (PMO delivery lead, led technical training for 15+ team members) alongside collaborative/team-delivery achievements
+- **Interviews:** Use STAR examples that show leading under ambiguity, making fast decisions, and translating technical work for non-technical stakeholders
+- **Don't overstate:** No formal assessment exists - avoid claiming a specific personality "type"; present this as self-reported working style, not a scored profile

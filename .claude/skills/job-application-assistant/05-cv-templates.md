@@ -115,12 +115,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Manager / PMO roles:**
+> PwC Manager with four years leading PMO delivery, executive reporting, and SOX control validation for Fortune 10 clients. Builds automation in Python, SQL, and JavaScript that replaces manual tracking with reliable, real-time reporting. Comfortable leading cross-functional workstreams and making fast, well-verified decisions. U.S. Marine Corps veteran.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Data Analyst roles:**
+> Data-focused professional with hands-on SQL, Python (Pandas, NumPy), and JavaScript experience building ETL pipelines, automated data-quality checks, and executive dashboards (Looker, Tableau, Power BI) for Fortune 10 clients. Translated complex SQL logic, including a 1,500+ line production query, into plain-language documentation for non-technical stakeholders. U.S. Marine Corps veteran combining technical rigor with clear communication.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

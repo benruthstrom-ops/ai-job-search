@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Benjamin Ruthstrom
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -24,18 +23,18 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Benjamin Ruthstrom - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Benjamin}{Ruthstrom}
+\address{Charlotte, NC, USA}{}{}
+\phone[mobile]{832-808-2842}
+\email{benruthstrom@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/benruthstrom}{LinkedIn}}
 
 \begin{document}
 
@@ -46,7 +45,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{PwC Manager combining hands-on technical skill with PMO leadership for Fortune 10 clients. Builds automation, data pipelines, and reporting frameworks in SQL, Python, JavaScript, and advanced Excel that eliminate manual effort and give executives reliable program visibility. Known for working through complex problems, whether translating a 1,500+ line SQL query into plain language for a client or designing bottom-up resource plans that surface staffing risk before it hits the schedule. U.S. Marine Corps veteran.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,15 +55,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Languages \& Scripting}: SQL, Python (Pandas, NumPy), JavaScript, Google Apps Script
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Engineering \& Automation}: ETL, data pipeline engineering, process automation, data-quality validation, advanced Excel modeling
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Reporting \& Visualization}: Looker, Tableau, Power BI, executive dashboarding
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Risk \& Controls}: SOX compliance, ITGC/ITAC/ITDM testing, control design and validation, regulatory control mapping, gap analysis, risk assessment, remediation planning, audit readiness
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Program \& Project Management}: PMO operations, bottom-up resource planning, milestone and tollgate tracking, risk escalation, workshop facilitation
 
 \end{itemize}
 
@@ -76,32 +75,53 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Manager ---
+\item{\cventry{2026--Present}{Manager}{PwC}{Charlotte, NC}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Lead PMO delivery for a Fortune 10 client, directing bottom-up resource planning across workstreams to assess replan feasibility, align staffing with test kickoffs, and drive tollgate and downstream dates
+    \item Own consolidated executive reporting, unifying multiple satellite trackers into a single leadership view that exposes data gaps and resourcing risks
+    \item Built a Python utility converting Excel source files to JSON to construct end-to-end data lineage for 100+ key data elements
+    \item Perform SOX control validation (ITGCs, ITACs, ITDMs), identifying process risk gaps and developing remediation plans with process owners
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Senior Associate ---
+\item{\cventry{2023--2026}{Senior Associate}{PwC}{Charlotte, NC}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Engineered a JavaScript and SQL data pipeline automating real-time processing of 1M+ records across 3 enterprise systems, cutting manual data cleaning effort by 40\%
+    \item Automated weekly reporting with scripts that detect missing/duplicate values and run data-quality checks, improving dataset accuracy by 25\%
+    \item Translated 36 SQL scripts, including a 1,500+ line main query, into plain-language documentation for client stakeholders
+    \item Developed 30+ automated workflows in JavaScript and Google Apps Script, cutting reporting time by 15 hours/week across 30 teams
+    \item Created 10+ Looker dashboards adopted by senior leadership, reducing time spent on project tracking by 15 hours/month
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Associate ---
+\item{\cventry{2022--2023}{Associate}{PwC}{Charlotte, NC}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Spearheaded regulatory compliance for a Fortune 10 client, mapping 100+ policies and controls to regulatory requirements, achieving 100\% audit readiness and safeguarding \$1M+ monthly budgets
+    \item Served as SME for the client's internal product, conducting gap analyses that identified 15+ control deficiencies
+    \item Ran daily project tracking across 50+ milestones in real-time dashboards, reducing timeline delays by 20\% through proactive risk escalation
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Quality Assurance Inspector ---
+\item{\cventry{2016--2017}{Quality Assurance Inspector}{United States Marine Corps}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Led technical training for 15+ team members, improving operational efficiency by 25\% through one-on-one coaching
+    \item Conducted inspections and functionality tests on a \$2M land-based air traffic control navigation system, certifying readiness for flight operations
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Air Traffic Control Mobile Team Member ---
+\item{\cventry{2012--2016}{Air Traffic Control Mobile Team Member}{United States Marine Corps}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Assembled and operated an expeditionary air traffic control system valued at \$2M
+    \item Configured 20+ network ports aboard naval ships, ensuring connectivity through 50+ critical flight operations
 \end{itemize}}}
 
 \end{itemize}
@@ -114,15 +134,11 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
+\item{\cventry{Expected 2028}{Master of Business Administration (Executive MBA)}{UNC Kenan-Flagler Business School}{}{}{}}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+\item{\cventry{2021}{Bachelor of Business Administration, Management Information Systems}{University of Houston}{}{}{}}
 
 \end{itemize}
 
@@ -133,27 +149,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item English (native).
 \end{itemize}
 
 % ============================================================

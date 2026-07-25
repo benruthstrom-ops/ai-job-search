@@ -10,11 +10,12 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary:
+- **indeed.com** - large general US job board
+- **linkedin.com/jobs** - LinkedIn job listings (filter: United States / Charlotte, NC, or remote); also covered by `linkedin-search` CLI
+- **glassdoor.com** - general US job board, also useful for company/culture research
+- **ziprecruiter.com** - general US job board
+- **freehire.me** - covered by `freehire-search` CLI
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
@@ -23,53 +24,55 @@ Secondary (company career pages via Google):
 
 Queries are grouped by priority. Each query should be combined with your location terms (e.g. your city, region, or metro area) where the site supports it.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Manager / PMO Roles
 
 These match your strongest and most desired career direction.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
+site:indeed.com "Manager" "PMO" Charlotte NC
+site:indeed.com "Program Manager" SOX Charlotte NC
+site:linkedin.com/jobs "PMO Manager" United States
+site:linkedin.com/jobs "Program Manager" remote
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: Data Analyst / SOX-Controls Roles
 
 These match your domain expertise.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:indeed.com "Data Analyst" SQL Python remote
+site:indeed.com "Data Analytics Manager" Charlotte NC
+site:linkedin.com/jobs "Data Analyst" SOX OR ITGC United States
+site:glassdoor.com "Data Analyst" automation remote
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 3: Adjacent Roles
 
 Adjacent roles you could pivot into.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:indeed.com "Business Intelligence Analyst" SQL Charlotte NC
+site:indeed.com "Risk and Controls" SOX Manager remote
+site:linkedin.com/jobs "Technical Program Manager" automation United States
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 4: Broader Automation / Consulting
 
-Wider net for general technical roles.
+Wider net for general technical/consulting roles.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:indeed.com "automation" PMO Charlotte NC
+site:linkedin.com/jobs "SQL" "PMO" remote
+site:ziprecruiter.com "Data Analyst" OR "Program Manager" remote
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Benjamin is open to relocation and remote work, so this is a soft filter rather than a hard commute check. Define acceptable areas:
+- Charlotte, NC and surrounding areas (current home base)
+- Remote (anywhere in the US) - preferred
+- Any US city, given openness to relocation
+- Roles requiring constant/frequent travel are a deal-breaker regardless of location (see Deal-breakers in CLAUDE.md)
 
 ## Date Filter
 

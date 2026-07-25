@@ -14,28 +14,33 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### 1. Translating Complex SQL for Stakeholders (Communication / Technical Translation)
+**S:** A Fortune 10 client's stakeholders needed to understand the logic behind 36 SQL scripts, including a 1,500+ line main query, but lacked the technical background to read the code directly.
+**T:** Translate all 36 scripts into plain-language documentation covering intent, logic, and expected outputs.
+**A:** Worked through each query systematically, breaking down logic step by step and documenting it in language non-technical stakeholders could follow.
+**R:** Stakeholders could understand script intent without reading code, speeding up discrepancy resolution and audit conversations.
+**Use for:** "Tell me about a time you explained something technical to a non-technical audience", "communication skills"
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Automating a Fortune 10 Data Pipeline (Technical Problem-Solving / Automation)
+**S:** A Fortune 10 client relied on manual data cleaning across 3 enterprise systems processing 1M+ records.
+**T:** Build an automated pipeline to replace the manual process.
+**A:** Engineered a JavaScript and SQL data pipeline for real-time processing across the systems.
+**R:** Cut manual data-cleaning effort by 40%.
+**Use for:** "Tell me about a process you improved", "technical problem-solving", "automation experience"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Leading Technical Training in the Marine Corps (Leadership / Coaching)
+**S:** As a Quality Assurance Inspector, team members needed to be brought up to speed on inspection and certification standards for a $2M air traffic control navigation system.
+**T:** Lead technical training for the team.
+**A:** Delivered one-on-one coaching for 15+ team members, tailoring instruction to individual skill gaps.
+**R:** Improved operational efficiency by 25%.
+**Use for:** "Tell me about a time you led or mentored others", "leadership style", "training/coaching experience"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 4. Consolidating Executive Reporting (Stakeholder Management / Data Strategy)
+**S:** A Fortune 10 client's program tracking was fragmented across multiple satellite trackers, making it hard for leadership to see risk.
+**T:** As Manager, own consolidated executive reporting for the program.
+**A:** Unified multiple trackers into a single leadership view and built a Python utility converting Excel sources to JSON to construct end-to-end data lineage for 100+ key data elements.
+**R:** Exposed previously hidden data gaps and resourcing risks, giving leadership reliable visibility.
+**Use for:** "Tell me about a time you gave leadership better visibility into a problem", "stakeholder management", "data strategy"
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
