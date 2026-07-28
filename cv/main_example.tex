@@ -2,71 +2,88 @@
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
+%% Template: clean-ats (templates/cv/clean-ats/) - see TEMPLATE.md for style rules.
 %% Compile with: lualatex main_example.tex
-%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+%% (Also compiles with pdflatex/xelatex - no fontspec or icon-font dependency.)
 
-\documentclass[11pt,a4paper,sans]{moderncv}
-\moderncvstyle{banking}
-\moderncvcolor{blue}
+\documentclass[11pt,a4paper]{article}
 
-% Force both first and last name AND section headings to render in moderncv
-% blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
-% looks inconsistent with the rest of the blue accent scheme.
-\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
-\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
-\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
-
-\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{tabularx}
+\usepackage{microtype}
 \usepackage{hyperref}
+
+\setcounter{secnumdepth}{-1}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% Accent color for section rules / headings / links (swap this one line to re-theme)
+\definecolor{accent}{HTML}{1F5C99}
+
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,
-    urlcolor=blue,
+    linkcolor=accent,
+    urlcolor=accent,
     pdftitle={Benjamin Ruthstrom - CV},
-    pdfpagemode=FullScreen,
+    pdfpagemode=UseNone,
 }
-\usepackage[scale=0.80]{geometry}
-\usepackage{import}
 
-% personal data
-\name{Benjamin}{Ruthstrom}
-\address{Charlotte, NC, USA}{}{}
-\phone[mobile]{832-808-2842}
-\email{benruthstrom@gmail.com}
-\extrainfo{\href{https://linkedin.com/in/benruthstrom}{LinkedIn}}
+% Section heading: bold, accent-colored, underlined with a rule
+\titleformat{\section}
+  {\large\bfseries\color{accent}}{}{0pt}{}
+  [{\color{accent}\titlerule[0.8pt]}]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.15em, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+% Name + contact header
+\newcommand{\cvname}[1]{{\centering\fontsize{26}{28}\selectfont\bfseries #1\par}}
+\newcommand{\cvcontact}[1]{{\centering\small #1\par}}
+
+% Entry line: bold title/degree left, date right; org (and optional location) in italics below
+% Usage: \cventry{Title/Degree}{Date range}{Organization}{Location or {} if none}
+\newcommand{\cventry}[4]{%
+  \noindent\begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+  \end{tabularx}%
+  \\[1pt]
+  {\itshape #3\ifthenelse{\equal{#4}{}}{}{, #4}}\par
+}
 
 \begin{document}
 
-\makecvtitle
+\cvname{Benjamin Ruthstrom}
+\vspace{2pt}
+\cvcontact{Charlotte, NC, USA \textbar\ \href{mailto:benruthstrom@gmail.com}{benruthstrom@gmail.com} \textbar\ 832-808-2842 \textbar\ \href{https://linkedin.com/in/benruthstrom}{LinkedIn}}
+\vspace{4pt}
 
 % ============================================================
 %     PROFILE STATEMENT
 % ============================================================
 
-\vspace{6pt}
-\small{PwC Manager combining hands-on technical skill with PMO leadership for Fortune 10 clients. Builds automation, data pipelines, and reporting frameworks in SQL, Python, JavaScript, and advanced Excel that eliminate manual effort and give executives reliable program visibility. Known for working through complex problems, whether translating a 1,500+ line SQL query into plain language for a client or designing bottom-up resource plans that surface staffing risk before it hits the schedule. U.S. Marine Corps veteran.}
+\section{Summary}
+PwC Manager combining hands-on technical skill with PMO leadership for Fortune 10 clients. Builds automation, data pipelines, and reporting frameworks in SQL, Python, JavaScript, and advanced Excel that eliminate manual effort and give executives reliable program visibility. Known for working through complex problems, whether translating a 1,500+ line SQL query into plain language for a client or designing bottom-up resource plans that surface staffing risk before it hits the schedule. U.S. Marine Corps veteran.
 
 % ============================================================
 %     CORE COMPETENCIES
 % ============================================================
 
 \section{Core Competencies}
-\vspace{1pt}
 \begin{itemize}
-
 \item \textbf{Languages \& Scripting}: SQL, Python (Pandas, NumPy), JavaScript, Google Apps Script
-
 \item \textbf{Engineering \& Automation}: ETL, data pipeline engineering, process automation, data-quality validation, advanced Excel modeling
-
 \item \textbf{Reporting \& Visualization}: Looker, Tableau, Power BI, executive dashboarding, AppSheet
-
 \item \textbf{AI-Assisted Development}: Claude Code, Google AI Studio, code generation, data transformation, technical documentation, rapid prototyping
-
 \item \textbf{Risk \& Controls}: SOX compliance, ITGC/ITAC/ITDM testing, control design and validation, regulatory control mapping, gap analysis, risk assessment, remediation planning, audit readiness
-
 \item \textbf{Program \& Project Management}: PMO operations, bottom-up resource planning, milestone and tollgate tracking, risk escalation, workshop facilitation, Agile methodologies, Microsoft Project
-
 \end{itemize}
 
 % ============================================================
@@ -74,23 +91,17 @@
 % ============================================================
 
 \section{Professional Experience}
-\vspace{3pt}
-\begin{itemize}
 
-% --- Manager ---
-\item{\cventry{2026--Present}{Manager}{PwC}{Charlotte, NC}{}{\vspace{1pt}
+\cventry{Manager}{2026 -- Present}{PwC}{Charlotte, NC}
 \begin{itemize}
     \item Lead PMO delivery for a Fortune 10 client, coordinating 3+ cross-functional teams, up to six client stakeholders, and 4-5 staff
     \item Direct bottom-up resource planning for a 10+ person program, assessing replan feasibility, aligning staffing with test kickoffs, and driving tollgate and downstream dates
     \item Own consolidated executive reporting, unifying multiple satellite trackers into a single leadership view that exposes data gaps and resourcing risks
     \item Built a Python utility converting Excel source files to JSON to structure metadata for Google AI Studio and construct end-to-end data lineage for 100+ key data elements
     \item Perform SOX control validation (ITGCs, ITACs, ITDMs), identifying process risk gaps and developing remediation plans with process owners
-\end{itemize}}}
+\end{itemize}
 
-\vspace{3pt}
-
-% --- Senior Associate ---
-\item{\cventry{2023--2026}{Senior Associate, Enterprise Risk and Controls -- Data \& Tech}{PwC}{Charlotte, NC}{}{\vspace{1pt}
+\cventry{Senior Associate, Enterprise Risk and Controls -- Data \& Tech}{2023 -- 2026}{PwC}{Charlotte, NC}
 \begin{itemize}
     \item Engineered a JavaScript and SQL data pipeline automating real-time processing of 1M+ records across 3 enterprise systems, cutting manual data cleaning effort by 40\%
     \item Automated weekly reporting with scripts that detect missing/duplicate values and run data-quality checks via a consolidated dashboard and AppSheet application, improving dataset accuracy by 25\%
@@ -98,57 +109,40 @@
     \item Developed 30+ automated workflows in JavaScript and Google Apps Script, cutting reporting time by 15 hours/week across 30 teams
     \item Created 10+ Looker dashboards adopted by senior leadership, reducing time spent on project tracking by 15 hours/month
     \item Reconciled discrepancies across systems and data sources through structured working sessions, resolving 10+ open items and aligning stakeholders on root cause
-\end{itemize}}}
+\end{itemize}
 
-\vspace{3pt}
-
-% --- Associate ---
-\item{\cventry{2022--2023}{Associate, Customer Transformation}{PwC}{Charlotte, NC}{}{\vspace{1pt}
+\cventry{Associate, Customer Transformation}{2022 -- 2023}{PwC}{Charlotte, NC}
 \begin{itemize}
     \item Drove customer-centric strategies and initiatives to enhance client engagement and loyalty, leveraging data-driven insights and digital solutions to deliver personalized, seamless experiences across touchpoints
     \item Led cross-functional teams in developing and implementing customer experience (CX) frameworks and journey maps as part of broader digital transformation initiatives, optimizing processes to drive business growth
-\end{itemize}}}
+\end{itemize}
 
-\vspace{3pt}
-
-% --- Navigational Aids Quality Assurance Inspector ---
-\item{\cventry{2016--2017}{Navigational Aids Quality Assurance Inspector}{United States Marine Corps}{Jacksonville, NC}{}{\vspace{1pt}
+\cventry{Navigational Aids Quality Assurance Inspector}{2016 -- 2017}{United States Marine Corps}{Jacksonville, NC}
 \begin{itemize}
     \item Performed maintenance on and operated two multi-million-dollar Air Traffic Control systems
     \item Ordered, logged, and tracked system components valued from \$100,000 to \$1,000,000
     \item Provided training to high-ranking pilots and officers in the Marine Corps and Navy
     \item Conducted classes to teach junior Marines the assembly, disassembly, and storage of equipment
-\end{itemize}}}
+\end{itemize}
 
-\vspace{3pt}
-
-% --- Marine Air Traffic Control Mobile Team Member ---
-\item{\cventry{2015--2016}{Marine Air Traffic Control Mobile Team Member}{United States Marine Corps}{Norfolk, VA}{}{\vspace{1pt}
+\cventry{Marine Air Traffic Control Mobile Team Member}{2015 -- 2016}{United States Marine Corps}{Norfolk, VA}
 \begin{itemize}
     \item Assembled, operated, and maintained an expeditionary Air Traffic Control system valued at \$2M
     \item Provided navigation to Marine Corps and Navy pilots, supporting 50+ incident-free flight hours across multiple countries
     \item Installed and diagnosed connectivity for secure and non-secure network ports across multiple workspaces
-\end{itemize}}}
+\end{itemize}
 
-\vspace{3pt}
-
-% --- Navigational Aids Technician ---
-\item{\cventry{2013--2015}{Navigational Aids Technician}{United States Marine Corps}{Jacksonville, NC}{}{\vspace{1pt}
+\cventry{Navigational Aids Technician}{2013 -- 2015}{United States Marine Corps}{Jacksonville, NC}
 \begin{itemize}
     \item Coordinated with Marine Corps and Navy pilots to achieve FAA flight-check status, providing navigation aids within 1 degree of accuracy
     \item Executed field maintenance in stressful, expeditionary environments
     \item Conducted missions at arming and refueling points for aircraft
-\end{itemize}}}
+\end{itemize}
 
-\vspace{3pt}
-
-% --- Trainee ---
-\item{\cventry{2012--2013}{Trainee}{United States Marine Corps}{Pensacola, FL}{}{\vspace{1pt}
+\cventry{Trainee}{2012 -- 2013}{United States Marine Corps}{Pensacola, FL}
 \begin{itemize}
     \item Learned technical skills including soldering, component repair, and maintenance
     \item Performed field repairs using limited tools and blueprint information
-\end{itemize}}}
-
 \end{itemize}
 
 % ============================================================
@@ -156,35 +150,23 @@
 % ============================================================
 
 \section{Education}
-\vspace{1pt}
-\begin{itemize}
 
-\item{\cventry{Expected 2028}{Master of Business Administration (Executive MBA)}{UNC Kenan-Flagler Business School}{}{}{}}
+\cventry{Master of Business Administration (Executive MBA)}{Expected 2028}{UNC Kenan-Flagler Business School}{}
 
-\vspace{3pt}
-
-\item{\cventry{2017--2021}{Bachelor of Business Administration, Management Information Systems}{University of Houston}{}{}{}}
-
-\end{itemize}
+\cventry{Bachelor of Business Administration, Management Information Systems}{2017 -- 2021}{University of Houston}{}
 
 % ============================================================
 %     LANGUAGES
 % ============================================================
 
 \section{Languages}
-\vspace{1pt}
-\begin{itemize}
-\item English (native).
-\end{itemize}
+English (native).
 
 % ============================================================
 %     REFERENCES
 % ============================================================
 
 \section{References}
-\vspace{1pt}
-\begin{itemize}
-\item{Available upon request.}
-\end{itemize}
+Available upon request.
 
 \end{document}

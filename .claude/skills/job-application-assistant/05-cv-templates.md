@@ -4,6 +4,19 @@ framework_version: 1.2.1
 
 # CV Templates and Tailoring Guide
 
+<!-- BEGIN ACTIVE-TEMPLATE (managed by /add-template - do not edit by hand) -->
+> **Active template override: `clean-ats`**
+>
+> A custom template is active. Where this block conflicts with the stock guidance below, this block wins. Structural advice below (tailoring, page-budget, cutting rules) still applies.
+>
+> - **Template skeleton:** `templates/cv/clean-ats/template.tex` — use this as the structural reference instead of the stock template
+> - **Manifest:** `templates/cv/clean-ats/TEMPLATE.md` — read this for style rules and known pitfalls before drafting
+> - **Compile with:** `lualatex` (also compiles with pdflatex/xelatex — no fontspec or icon-font dependency)
+> - **Fonts:** TeX Gyre Heros (Helvetica-alike sans-serif), bundled with any standard TeX Live install via the `tgheros` package — no font files to manage
+> - **Page limit:** exactly 2 page(s)
+> - **Output file:** unchanged (`cv/main_<company>_<role>.tex`); no extra class/font files needed in the output directory — all packages used (`titlesec`, `enumitem`, `xcolor`, `ifthen`, `tabularx`, `parskip`, `microtype`, `hyperref`, `tgheros`) are standard TeX Live
+<!-- END ACTIVE-TEMPLATE -->
+
 <!-- SETUP: Profile statements and section ordering are personalized by running /setup -->
 
 ## Template: LaTeX moderncv (Banking Style)

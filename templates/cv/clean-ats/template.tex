@@ -1,0 +1,119 @@
+%% Clean ATS CV Template
+%% Single-column, no icon fonts (avoids the moderncv+fontawesome5 rendering bug),
+%% modeled on a plain professional resume layout: bold name header, contact line,
+%% colored-rule section headings, title/date on one line with org in italics below.
+%%
+%% Compile with: lualatex main_<company>_<role>.tex
+%% (Also compiles cleanly with pdflatex/xelatex - no fontspec or icon-font dependency.)
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\setcounter{secnumdepth}{-1}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% Accent color for section rules / headings / links (swap this one line to re-theme)
+\definecolor{accent}{HTML}{1F5C99}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent,
+    pdftitle={[YOUR_NAME] - CV},
+    pdfpagemode=UseNone,
+}
+
+% Section heading: bold, accent-colored, underlined with a rule
+\titleformat{\section}
+  {\large\bfseries\color{accent}}{}{0pt}{}
+  [{\color{accent}\titlerule[0.8pt]}]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.15em, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+% Name + contact header
+\newcommand{\cvname}[1]{{\centering\fontsize{26}{28}\selectfont\bfseries #1\par}}
+\newcommand{\cvcontact}[1]{{\centering\small #1\par}}
+
+% Entry line: bold title/degree left, date right; org (and optional location) in italics below
+% Usage: \cventry{Title/Degree}{Date range}{Organization}{Location or {} if none}
+\newcommand{\cventry}[4]{%
+  \noindent\begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+  \end{tabularx}%
+  \\[1pt]
+  {\itshape #3\ifthenelse{\equal{#4}{}}{}{, #4}}\par
+}
+
+\begin{document}
+
+\cvname{[YOUR_NAME]}
+\vspace{2pt}
+\cvcontact{[YOUR_ADDRESS] \textbar\ \href{mailto:[YOUR_EMAIL]}{[YOUR_EMAIL]} \textbar\ [YOUR_PHONE] \textbar\ \href{[YOUR_LINKEDIN_URL]}{LinkedIn}}
+\vspace{4pt}
+
+% ============================================================
+%     PROFILE STATEMENT
+% ============================================================
+
+\section{Summary}
+[PROFILE_STATEMENT - 3-5 lines, tailored per role]
+
+% ============================================================
+%     CORE COMPETENCIES
+% ============================================================
+
+\section{Core Competencies}
+\begin{itemize}
+\item \textbf{[Category]}: [skills, tools, keywords]
+\item \textbf{[Category]}: [skills, tools, keywords]
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Professional Experience}
+
+\cventry{[Job Title]}{[Start] -- [End]}{[Company]}{[Location]}
+\begin{itemize}
+\item [Achievement bullet]
+\item [Achievement bullet]
+\end{itemize}
+
+% ============================================================
+%     EDUCATION
+% ============================================================
+
+\section{Education}
+
+\cventry{[Degree]}{[Date]}{[Institution]}{}
+
+% ============================================================
+%     LANGUAGES
+% ============================================================
+
+\section{Languages}
+[Language] ([proficiency]).
+
+% ============================================================
+%     REFERENCES
+% ============================================================
+
+\section{References}
+Available upon request.
+
+\end{document}
