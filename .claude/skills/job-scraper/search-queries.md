@@ -66,12 +66,24 @@ site:linkedin.com/jobs "SQL" "PMO" remote
 site:ziprecruiter.com "Data Analyst" OR "Program Manager" remote
 ```
 
+### Priority 5: In-House Implementation / Systems Adoption (finance, PE, fintech)
+
+Matches the rapid software-adoption strength and the preference for a stable in-house seat over consulting-style engagement churn. Weighted toward finance, private equity, and fintech employers.
+
+```
+site:linkedin.com/jobs "Implementation Manager" finance OR fintech United States
+site:indeed.com "Systems Implementation" OR "Platform Implementation" Manager remote
+site:linkedin.com/jobs "Business Process Manager" fintech OR "private equity" United States
+site:indeed.com "PMO Manager" finance Charlotte NC
+```
+
 ## Location Filter
 
 Benjamin is open to relocation and remote work, so this is a soft filter rather than a hard commute check. Define acceptable areas:
 - Charlotte, NC and surrounding areas (current home base)
-- Remote (anywhere in the US) - preferred
+- Remote (anywhere in the US) - preferred, but daily on-site/hybrid work is genuinely fine and not a friction point
 - Any US city, given openness to relocation
+- Occasional/infrequent travel is fine
 - Roles requiring constant/frequent travel are a deal-breaker regardless of location (see Deal-breakers in CLAUDE.md)
 
 ## Date Filter

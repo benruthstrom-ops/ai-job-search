@@ -44,7 +44,7 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** SQL, Python (Pandas, NumPy), JavaScript/Google Apps Script automation, PMO/program management, SOX/ITGC/ITAC/ITDM controls testing, Looker/Tableau/Power BI reporting, advanced Excel modeling
+**Strong match areas:** SQL, Python (Pandas, NumPy), JavaScript/Google Apps Script automation, PMO/program management, SOX/ITGC/ITAC/ITDM controls testing, Looker/Tableau/Power BI reporting, advanced Excel modeling, rapid adoption/implementation of new software or platforms
 **Moderate match areas:** Broader data-analyst work not centered on controls/PMO (strong SQL/Python foundation, but title history has been Manager/Senior Associate, not "Data Analyst")
 **Weak match areas:** Software/ML engineering roles requiring formal CS or ML modeling background
 
@@ -76,10 +76,10 @@ Does the role and company culture match the behavioral profile?
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
 - Within commute range (Charlotte, NC): PASS
-- Remote or hybrid: PASS (remote preferred)
+- Remote, hybrid, or daily on-site: PASS (remote preferred, but daily in-office is genuinely fine - not a friction point)
 - Requires relocation: PASS (open to relocating)
 - Constant/frequent travel required: FAIL (deal-breaker)
-- Occasional/light travel: FLAG (discuss with user)
+- Occasional/infrequent/light travel: PASS (explicitly fine)
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -92,9 +92,11 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- Move into (or continue as) a Manager-level or Data Analyst-titled role
+- Continue growing in corporate America - target sectors: consulting, finance, private equity, fintech, data
+- Prefer an in-house/corporate seat with a stable, standard schedule ("standard 9-5") over the engagement-to-engagement variability of external client consulting
 - Reduce ambiguity - clearly scoped work over open-ended mandates
-- Secure remote-friendly work with strong work/life balance
+- Continue leveraging PMO/stakeholder-management strengths and rapid software/tool adoption
+- Remote preferred, but daily on-site work is genuinely fine; infrequent/occasional travel is fine (constant/frequent travel remains a deal-breaker)
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
 - Tasks that energize: New, innovative, or exciting work; automation/data work with visible impact; clearly scoped problems

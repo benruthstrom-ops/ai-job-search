@@ -18,6 +18,12 @@ venv/
 *.fls
 *.fdb_latexmk
 
+# API credentials (never commit these) - portal skills read keys from here.
+# `.env.example` is the tracked, value-free template.
+.env
+.env.local
+!.env.example
+
 # Personal data (never commit these)
 salary_data.json
 # Match at any depth: the job-scraper skill resolves `job_scraper/` relative to

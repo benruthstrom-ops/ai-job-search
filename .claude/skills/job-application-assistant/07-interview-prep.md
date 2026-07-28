@@ -28,14 +28,7 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 **R:** Cut manual data-cleaning effort by 40%.
 **Use for:** "Tell me about a process you improved", "technical problem-solving", "automation experience"
 
-### 3. Leading Technical Training in the Marine Corps (Leadership / Coaching)
-**S:** As a Quality Assurance Inspector, team members needed to be brought up to speed on inspection and certification standards for a $2M air traffic control navigation system.
-**T:** Lead technical training for the team.
-**A:** Delivered one-on-one coaching for 15+ team members, tailoring instruction to individual skill gaps.
-**R:** Improved operational efficiency by 25%.
-**Use for:** "Tell me about a time you led or mentored others", "leadership style", "training/coaching experience"
-
-### 4. Consolidating Executive Reporting (Stakeholder Management / Data Strategy)
+### 3. Consolidating Executive Reporting (Stakeholder Management / Data Strategy)
 **S:** A Fortune 10 client's program tracking was fragmented across multiple satellite trackers, making it hard for leadership to see risk.
 **T:** As Manager, own consolidated executive reporting for the program.
 **A:** Unified multiple trackers into a single leadership view and built a Python utility converting Excel sources to JSON to construct end-to-end data lineage for 100+ key data elements.
@@ -43,6 +36,38 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 **Use for:** "Tell me about a time you gave leadership better visibility into a problem", "stakeholder management", "data strategy"
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+
+## STAR Candidates (Complete Manually)
+
+### Training junior Marines and visiting officers as a QA Inspector
+**Source:** LinkedIn export (Navigational Aids Quality Assurance Inspector, June 2016 - July 2017) - "Provided training to high-ranking pilots and officers in both the Marine Corps and Navy" / "Conducted classes and training to teach junior Marines the assembly, disassembly, and storage of equipment"
+**What happened:** [Fill in a specific instance - what training program you built, who you trained, what impact it had]
+**Why it matters:** Answers "tell me about a time you led or mentored others", "leadership style", "training/coaching experience"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Leading customer-experience / digital transformation initiatives
+**Source:** LinkedIn export (Associate, Customer Transformation, Jan 2022 - June 2023) - "Lead cross-functional teams in the development and implementation of customer experience (CX) frameworks, journey mapping, and digital transformation initiatives"
+**What happened:** [Fill in a specific instance - which client/initiative, what frameworks or journey maps you built, what changed as a result]
+**Why it matters:** Answers "tell me about a time you led a cross-functional initiative", relevant for roles emphasizing customer experience, digital transformation, or process optimization
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Rapid adoption and implementation of a new software tool/platform
+**Source:** Self-reported strength during /setup - "really good at picking up new software and implementing it quickly"
+**What happened:** [Fill in a specific instance - which tool/platform, at which role, what you had to learn and roll out]
+**Why it matters:** Answers "tell me about a time you had to learn something new quickly", "how do you approach unfamiliar tools/systems", relevant for in-house implementation/systems-adoption roles
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
 ## Common Tough Questions
 
